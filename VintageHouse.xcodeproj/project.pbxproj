@@ -1,0 +1,789 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22511A1B5DCA63D89A899855 /* Pods_VintageHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B004693D3DC06D5402DD0 /* Pods_VintageHouse.framework */; };
+		C6BF2EEA2584415D0073A190 /* LabelDarkModeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF2EE92584415D0073A190 /* LabelDarkModeColor.swift */; };
+		F41EB476251B21D400AFCC44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EB475251B21D400AFCC44 /* HomeViewController.swift */; };
+		F41EB478251B21EC00AFCC44 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EB477251B21EC00AFCC44 /* MenuViewController.swift */; };
+		F425E6E72531274D0083EC12 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E6E62531274D0083EC12 /* ActivityCell.swift */; };
+		F425E6E92531286C0083EC12 /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E6E82531286C0083EC12 /* Room.swift */; };
+		F45EFDB9253A4D0500333019 /* ActivityCatalogCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EFDB8253A4D0500333019 /* ActivityCatalogCell.swift */; };
+		F45EFDBB253A4FF900333019 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F45EFDBA253A4FF900333019 /* Activity.swift */; };
+		F46172A9253F935E00098E6D /* ActivityDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F46172A8253F935E00098E6D /* ActivityDetailViewController.swift */; };
+		F4A68DF525379F9500BBAC03 /* WhatToKnowTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A68DF425379F9500BBAC03 /* WhatToKnowTableViewCell.swift */; };
+		F4C6E76825412979003E7966 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6E76725412979003E7966 /* UIView+Extension.swift */; };
+		F4C6E76A25412A21003E7966 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4C6E76925412A21003E7966 /* Constants.swift */; };
+		F4D08C19251BEF84007FE428 /* SlideInTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4D08C18251BEF84007FE428 /* SlideInTransition.swift */; };
+		F4E313F8251D79130052D89D /* RoomsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E313F7251D79130052D89D /* RoomsViewController.swift */; };
+		F4E313FA251D7BCC0052D89D /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E313F9251D7BCC0052D89D /* ActivityViewController.swift */; };
+		F4E313FC251D7BE10052D89D /* HouseRulesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E313FB251D7BE10052D89D /* HouseRulesViewController.swift */; };
+		F4E313FE251D7BFA0052D89D /* VintageHouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E313FD251D7BFA0052D89D /* VintageHouseViewController.swift */; };
+		F4E31400251D7C090052D89D /* HouseLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E313FF251D7C090052D89D /* HouseLocationViewController.swift */; };
+		F4E31402251D7C250052D89D /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4E31401251D7C250052D89D /* ContactViewController.swift */; };
+		F4EDA18025194500009D53A5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDA17F25194500009D53A5 /* AppDelegate.swift */; };
+		F4EDA18225194500009D53A5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDA18125194500009D53A5 /* SceneDelegate.swift */; };
+		F4EDA18725194500009D53A5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EDA18525194500009D53A5 /* Main.storyboard */; };
+		F4EDA18925194502009D53A5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4EDA18825194502009D53A5 /* Assets.xcassets */; };
+		F4EDA18C25194502009D53A5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EDA18A25194502009D53A5 /* LaunchScreen.storyboard */; };
+		F4EDA19725194503009D53A5 /* VintageHouseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDA19625194503009D53A5 /* VintageHouseTests.swift */; };
+		F4EDA1A225194503009D53A5 /* VintageHouseUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EDA1A125194503009D53A5 /* VintageHouseUITests.swift */; };
+		F4EF65562559FB990018C6C4 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4EF65552559FB990018C6C4 /* Location.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F4EDA19325194503009D53A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4EDA17425194500009D53A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4EDA17B25194500009D53A5;
+			remoteInfo = Ragnar;
+		};
+		F4EDA19E25194503009D53A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4EDA17425194500009D53A5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F4EDA17B25194500009D53A5;
+			remoteInfo = Ragnar;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3BF80A6AAE87A9FDA5C1C24A /* Pods-VintageHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VintageHouse.release.xcconfig"; path = "Target Support Files/Pods-VintageHouse/Pods-VintageHouse.release.xcconfig"; sourceTree = "<group>"; };
+		BD9B004693D3DC06D5402DD0 /* Pods_VintageHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VintageHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C6BF2EE92584415D0073A190 /* LabelDarkModeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDarkModeColor.swift; sourceTree = "<group>"; };
+		D808DB614D59BD84667D68FE /* Pods-VintageHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VintageHouse.debug.xcconfig"; path = "Target Support Files/Pods-VintageHouse/Pods-VintageHouse.debug.xcconfig"; sourceTree = "<group>"; };
+		F41EB475251B21D400AFCC44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F41EB477251B21EC00AFCC44 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		F425E6E62531274D0083EC12 /* ActivityCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCell.swift; sourceTree = "<group>"; };
+		F425E6E82531286C0083EC12 /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+		F45EFDB8253A4D0500333019 /* ActivityCatalogCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityCatalogCell.swift; sourceTree = "<group>"; };
+		F45EFDBA253A4FF900333019 /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		F46172A8253F935E00098E6D /* ActivityDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailViewController.swift; sourceTree = "<group>"; };
+		F4A68DF425379F9500BBAC03 /* WhatToKnowTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WhatToKnowTableViewCell.swift; sourceTree = "<group>"; };
+		F4C6E76725412979003E7966 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		F4C6E76925412A21003E7966 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F4D08C18251BEF84007FE428 /* SlideInTransition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlideInTransition.swift; sourceTree = "<group>"; };
+		F4E313F7251D79130052D89D /* RoomsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewController.swift; sourceTree = "<group>"; };
+		F4E313F9251D7BCC0052D89D /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		F4E313FB251D7BE10052D89D /* HouseRulesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseRulesViewController.swift; sourceTree = "<group>"; };
+		F4E313FD251D7BFA0052D89D /* VintageHouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageHouseViewController.swift; sourceTree = "<group>"; };
+		F4E313FF251D7C090052D89D /* HouseLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseLocationViewController.swift; sourceTree = "<group>"; };
+		F4E31401251D7C250052D89D /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		F4EDA17C25194500009D53A5 /* VintageHouse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VintageHouse.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EDA17F25194500009D53A5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4EDA18125194500009D53A5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F4EDA18625194500009D53A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4EDA18825194502009D53A5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F4EDA18B25194502009D53A5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F4EDA18D25194502009D53A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EDA19225194503009D53A5 /* VintageHouseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VintageHouseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EDA19625194503009D53A5 /* VintageHouseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageHouseTests.swift; sourceTree = "<group>"; };
+		F4EDA19825194503009D53A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EDA19D25194503009D53A5 /* VintageHouseUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VintageHouseUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4EDA1A125194503009D53A5 /* VintageHouseUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VintageHouseUITests.swift; sourceTree = "<group>"; };
+		F4EDA1A325194503009D53A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4EF65552559FB990018C6C4 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4EDA17925194500009D53A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22511A1B5DCA63D89A899855 /* Pods_VintageHouse.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EDA18F25194503009D53A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EDA19A25194503009D53A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79FED6C3FE8954BCF6786D9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BD9B004693D3DC06D5402DD0 /* Pods_VintageHouse.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C6066D22256C9329002B5660 /* SwiftPhotoGallery */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SwiftPhotoGallery;
+			sourceTree = "<group>";
+		};
+		EB0D765FA4B06A071F03EC02 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D808DB614D59BD84667D68FE /* Pods-VintageHouse.debug.xcconfig */,
+				3BF80A6AAE87A9FDA5C1C24A /* Pods-VintageHouse.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		F41EB46F251B212700AFCC44 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F41EB470251B214100AFCC44 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F425E6E82531286C0083EC12 /* Room.swift */,
+				F45EFDBA253A4FF900333019 /* Activity.swift */,
+				F4EF65552559FB990018C6C4 /* Location.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F41EB471251B214B00AFCC44 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F425E6E62531274D0083EC12 /* ActivityCell.swift */,
+				F45EFDB8253A4D0500333019 /* ActivityCatalogCell.swift */,
+				F4A68DF425379F9500BBAC03 /* WhatToKnowTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F41EB472251B215900AFCC44 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F41EB475251B21D400AFCC44 /* HomeViewController.swift */,
+				F41EB477251B21EC00AFCC44 /* MenuViewController.swift */,
+				F4E313F7251D79130052D89D /* RoomsViewController.swift */,
+				F4E313FB251D7BE10052D89D /* HouseRulesViewController.swift */,
+				F4E313FD251D7BFA0052D89D /* VintageHouseViewController.swift */,
+				F4E313FF251D7C090052D89D /* HouseLocationViewController.swift */,
+				F4E31401251D7C250052D89D /* ContactViewController.swift */,
+				F4E313F9251D7BCC0052D89D /* ActivityViewController.swift */,
+				F46172A8253F935E00098E6D /* ActivityDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F4C6E76625412944003E7966 /* Extention */ = {
+			isa = PBXGroup;
+			children = (
+				F4C6E76725412979003E7966 /* UIView+Extension.swift */,
+				F4C6E76925412A21003E7966 /* Constants.swift */,
+				C6BF2EE92584415D0073A190 /* LabelDarkModeColor.swift */,
+			);
+			path = Extention;
+			sourceTree = "<group>";
+		};
+		F4EDA17325194500009D53A5 = {
+			isa = PBXGroup;
+			children = (
+				F4EDA17E25194500009D53A5 /* VintageHouse */,
+				F4EDA19525194503009D53A5 /* VintageHouseTests */,
+				F4EDA1A025194503009D53A5 /* VintageHouseUITests */,
+				F4EDA17D25194500009D53A5 /* Products */,
+				EB0D765FA4B06A071F03EC02 /* Pods */,
+				79FED6C3FE8954BCF6786D9A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4EDA17D25194500009D53A5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDA17C25194500009D53A5 /* VintageHouse.app */,
+				F4EDA19225194503009D53A5 /* VintageHouseTests.xctest */,
+				F4EDA19D25194503009D53A5 /* VintageHouseUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4EDA17E25194500009D53A5 /* VintageHouse */ = {
+			isa = PBXGroup;
+			children = (
+				C6066D22256C9329002B5660 /* SwiftPhotoGallery */,
+				F4C6E76625412944003E7966 /* Extention */,
+				F41EB472251B215900AFCC44 /* Controller */,
+				F41EB471251B214B00AFCC44 /* View */,
+				F41EB470251B214100AFCC44 /* Model */,
+				F41EB46F251B212700AFCC44 /* Utilities */,
+				F4EDA17F25194500009D53A5 /* AppDelegate.swift */,
+				F4EDA18125194500009D53A5 /* SceneDelegate.swift */,
+				F4EDA18525194500009D53A5 /* Main.storyboard */,
+				F4EDA18825194502009D53A5 /* Assets.xcassets */,
+				F4EDA18A25194502009D53A5 /* LaunchScreen.storyboard */,
+				F4EDA18D25194502009D53A5 /* Info.plist */,
+				F4D08C18251BEF84007FE428 /* SlideInTransition.swift */,
+			);
+			path = VintageHouse;
+			sourceTree = "<group>";
+		};
+		F4EDA19525194503009D53A5 /* VintageHouseTests */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDA19625194503009D53A5 /* VintageHouseTests.swift */,
+				F4EDA19825194503009D53A5 /* Info.plist */,
+			);
+			path = VintageHouseTests;
+			sourceTree = "<group>";
+		};
+		F4EDA1A025194503009D53A5 /* VintageHouseUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F4EDA1A125194503009D53A5 /* VintageHouseUITests.swift */,
+				F4EDA1A325194503009D53A5 /* Info.plist */,
+			);
+			path = VintageHouseUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4EDA17B25194500009D53A5 /* VintageHouse */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4EDA1A625194503009D53A5 /* Build configuration list for PBXNativeTarget "VintageHouse" */;
+			buildPhases = (
+				E14586DB594036B8B73CC440 /* [CP] Check Pods Manifest.lock */,
+				F4EDA17825194500009D53A5 /* Sources */,
+				F4EDA17925194500009D53A5 /* Frameworks */,
+				F4EDA17A25194500009D53A5 /* Resources */,
+				40343DE986080C5DA8FCB567 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VintageHouse;
+			productName = Ragnar;
+			productReference = F4EDA17C25194500009D53A5 /* VintageHouse.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F4EDA19125194503009D53A5 /* VintageHouseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4EDA1A925194503009D53A5 /* Build configuration list for PBXNativeTarget "VintageHouseTests" */;
+			buildPhases = (
+				F4EDA18E25194503009D53A5 /* Sources */,
+				F4EDA18F25194503009D53A5 /* Frameworks */,
+				F4EDA19025194503009D53A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4EDA19425194503009D53A5 /* PBXTargetDependency */,
+			);
+			name = VintageHouseTests;
+			productName = RagnarTests;
+			productReference = F4EDA19225194503009D53A5 /* VintageHouseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F4EDA19C25194503009D53A5 /* VintageHouseUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4EDA1AC25194503009D53A5 /* Build configuration list for PBXNativeTarget "VintageHouseUITests" */;
+			buildPhases = (
+				F4EDA19925194503009D53A5 /* Sources */,
+				F4EDA19A25194503009D53A5 /* Frameworks */,
+				F4EDA19B25194503009D53A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4EDA19F25194503009D53A5 /* PBXTargetDependency */,
+			);
+			name = VintageHouseUITests;
+			productName = RagnarUITests;
+			productReference = F4EDA19D25194503009D53A5 /* VintageHouseUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4EDA17425194500009D53A5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Home;
+				TargetAttributes = {
+					F4EDA17B25194500009D53A5 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					F4EDA19125194503009D53A5 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F4EDA17B25194500009D53A5;
+					};
+					F4EDA19C25194503009D53A5 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = F4EDA17B25194500009D53A5;
+					};
+				};
+			};
+			buildConfigurationList = F4EDA17725194500009D53A5 /* Build configuration list for PBXProject "VintageHouse" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4EDA17325194500009D53A5;
+			productRefGroup = F4EDA17D25194500009D53A5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4EDA17B25194500009D53A5 /* VintageHouse */,
+				F4EDA19125194503009D53A5 /* VintageHouseTests */,
+				F4EDA19C25194503009D53A5 /* VintageHouseUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4EDA17A25194500009D53A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EDA18C25194502009D53A5 /* LaunchScreen.storyboard in Resources */,
+				F4EDA18925194502009D53A5 /* Assets.xcassets in Resources */,
+				F4EDA18725194500009D53A5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EDA19025194503009D53A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EDA19B25194503009D53A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40343DE986080C5DA8FCB567 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VintageHouse/Pods-VintageHouse-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-VintageHouse/Pods-VintageHouse-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-VintageHouse/Pods-VintageHouse-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E14586DB594036B8B73CC440 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-VintageHouse-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4EDA17825194500009D53A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EDA18025194500009D53A5 /* AppDelegate.swift in Sources */,
+				F4E31400251D7C090052D89D /* HouseLocationViewController.swift in Sources */,
+				F4EDA18225194500009D53A5 /* SceneDelegate.swift in Sources */,
+				F41EB478251B21EC00AFCC44 /* MenuViewController.swift in Sources */,
+				F45EFDBB253A4FF900333019 /* Activity.swift in Sources */,
+				F4D08C19251BEF84007FE428 /* SlideInTransition.swift in Sources */,
+				C6BF2EEA2584415D0073A190 /* LabelDarkModeColor.swift in Sources */,
+				F4A68DF525379F9500BBAC03 /* WhatToKnowTableViewCell.swift in Sources */,
+				F4EF65562559FB990018C6C4 /* Location.swift in Sources */,
+				F425E6E72531274D0083EC12 /* ActivityCell.swift in Sources */,
+				F4E313FA251D7BCC0052D89D /* ActivityViewController.swift in Sources */,
+				F4E31402251D7C250052D89D /* ContactViewController.swift in Sources */,
+				F46172A9253F935E00098E6D /* ActivityDetailViewController.swift in Sources */,
+				F4C6E76825412979003E7966 /* UIView+Extension.swift in Sources */,
+				F425E6E92531286C0083EC12 /* Room.swift in Sources */,
+				F4E313FE251D7BFA0052D89D /* VintageHouseViewController.swift in Sources */,
+				F4C6E76A25412A21003E7966 /* Constants.swift in Sources */,
+				F4E313F8251D79130052D89D /* RoomsViewController.swift in Sources */,
+				F4E313FC251D7BE10052D89D /* HouseRulesViewController.swift in Sources */,
+				F41EB476251B21D400AFCC44 /* HomeViewController.swift in Sources */,
+				F45EFDB9253A4D0500333019 /* ActivityCatalogCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EDA18E25194503009D53A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EDA19725194503009D53A5 /* VintageHouseTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4EDA19925194503009D53A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4EDA1A225194503009D53A5 /* VintageHouseUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4EDA19425194503009D53A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4EDA17B25194500009D53A5 /* VintageHouse */;
+			targetProxy = F4EDA19325194503009D53A5 /* PBXContainerItemProxy */;
+		};
+		F4EDA19F25194503009D53A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F4EDA17B25194500009D53A5 /* VintageHouse */;
+			targetProxy = F4EDA19E25194503009D53A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F4EDA18525194500009D53A5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4EDA18625194500009D53A5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4EDA18A25194502009D53A5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4EDA18B25194502009D53A5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4EDA1A425194503009D53A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F4EDA1A525194503009D53A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4EDA1A725194503009D53A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D808DB614D59BD84667D68FE /* Pods-VintageHouse.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
+				INFOPLIST_FILE = "$(SRCROOT)/VintageHouse/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emre.VintageHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4EDA1A825194503009D53A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF80A6AAE87A9FDA5C1C24A /* Pods-VintageHouse.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
+				INFOPLIST_FILE = "$(SRCROOT)/VintageHouse/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emre.VintageHouse;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F4EDA1AA25194503009D53A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
+				INFOPLIST_FILE = RagnarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emre.RagnarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ragnar.app/Ragnar";
+			};
+			name = Debug;
+		};
+		F4EDA1AB25194503009D53A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
+				INFOPLIST_FILE = RagnarTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emre.RagnarTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ragnar.app/Ragnar";
+			};
+			name = Release;
+		};
+		F4EDA1AD25194503009D53A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
+				INFOPLIST_FILE = RagnarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emre.RagnarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VintageHouse;
+			};
+			name = Debug;
+		};
+		F4EDA1AE25194503009D53A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
+				INFOPLIST_FILE = RagnarUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = emre.RagnarUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VintageHouse;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4EDA17725194500009D53A5 /* Build configuration list for PBXProject "VintageHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EDA1A425194503009D53A5 /* Debug */,
+				F4EDA1A525194503009D53A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4EDA1A625194503009D53A5 /* Build configuration list for PBXNativeTarget "VintageHouse" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EDA1A725194503009D53A5 /* Debug */,
+				F4EDA1A825194503009D53A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4EDA1A925194503009D53A5 /* Build configuration list for PBXNativeTarget "VintageHouseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EDA1AA25194503009D53A5 /* Debug */,
+				F4EDA1AB25194503009D53A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4EDA1AC25194503009D53A5 /* Build configuration list for PBXNativeTarget "VintageHouseUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4EDA1AD25194503009D53A5 /* Debug */,
+				F4EDA1AE25194503009D53A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4EDA17425194500009D53A5 /* Project object */;
+}
