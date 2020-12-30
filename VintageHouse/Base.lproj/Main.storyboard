@@ -1428,46 +1428,140 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="692"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-xs-8h6">
-                                <rect key="frame" x="65" y="356" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Text"/>
-                                <connections>
-                                    <action selector="textButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="Q0Y-WR-S0N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia0-qs-yZv">
-                                <rect key="frame" x="159" y="453" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Email"/>
-                                <connections>
-                                    <action selector="emailButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="S3Y-pJ-IEM"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Top-q5-Wqh">
-                                <rect key="frame" x="249" y="356" width="112" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Call"/>
-                                <connections>
-                                    <action selector="callButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="8Ma-ex-5Ca"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Contact Eva " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAm-Dr-fAZ">
-                                <rect key="frame" x="104" y="112" width="206" height="109"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bXV-kE-LVw">
+                                <rect key="frame" x="42" y="247" width="330" height="229"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dfk-xs-8h6">
+                                        <rect key="frame" x="18" y="20" width="112" height="30"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="M8H-fq-RRH"/>
+                                            <constraint firstAttribute="width" constant="112" id="QIW-f5-rfh"/>
+                                        </constraints>
+                                        <state key="normal" title="Text Eva">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="textButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="Q0Y-WR-S0N"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1A-Sg-Ldr" userLabel="Call Emre">
+                                        <rect key="frame" x="198" y="96" width="112" height="30"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="Ba0-VZ-0M8"/>
+                                            <constraint firstAttribute="width" constant="112" id="NF6-LQ-4eD"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="112" id="Y1X-Vt-2PN"/>
+                                        </constraints>
+                                        <state key="normal" title="Call Emre">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callEmreButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="Cb8-Bj-g5x"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Top-q5-Wqh">
+                                        <rect key="frame" x="18" y="96" width="112" height="30"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="EC9-Cb-ZZi"/>
+                                            <constraint firstAttribute="height" constant="30" id="sYj-cH-oRy"/>
+                                        </constraints>
+                                        <state key="normal" title="Call Eva">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="callButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="bKu-jR-90t"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ia0-qs-yZv">
+                                        <rect key="frame" x="18" y="179" width="112" height="30"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="7cY-LC-QwP"/>
+                                            <constraint firstAttribute="width" constant="112" id="wn4-Oo-JVa"/>
+                                        </constraints>
+                                        <state key="normal" title="Email Eva">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="emailButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="ZqD-Ad-1wH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jbu-c4-wWS" userLabel="Text Emre">
+                                        <rect key="frame" x="198" y="20" width="112" height="30"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="LL0-lF-DhG"/>
+                                            <constraint firstAttribute="height" constant="30" id="xUb-tf-FKg"/>
+                                        </constraints>
+                                        <state key="normal" title="Text Emre">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="textEmreButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="3eJ-8g-u4U"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3DK-KJ-rYS" userLabel="Email Emre">
+                                        <rect key="frame" x="198" y="179" width="112" height="30"/>
+                                        <color key="backgroundColor" systemColor="labelColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="112" id="dPw-Qm-iql"/>
+                                            <constraint firstAttribute="height" constant="30" id="tmy-Qn-qph"/>
+                                        </constraints>
+                                        <state key="normal" title="Email Emre">
+                                            <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="emailEmreButtonTapped:" destination="UaT-AO-fd1" eventType="touchUpInside" id="Cnt-ft-h8Y"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Jbu-c4-wWS" firstAttribute="leading" secondItem="3DK-KJ-rYS" secondAttribute="leading" id="1Eo-F8-wkN"/>
+                                    <constraint firstItem="Jbu-c4-wWS" firstAttribute="top" secondItem="bXV-kE-LVw" secondAttribute="top" constant="20" id="6BG-pH-HUo"/>
+                                    <constraint firstItem="3DK-KJ-rYS" firstAttribute="baseline" secondItem="ia0-qs-yZv" secondAttribute="baseline" id="755-gb-5qu"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jbu-c4-wWS" secondAttribute="trailing" constant="20" id="9fm-9W-Dzu"/>
+                                    <constraint firstItem="Jbu-c4-wWS" firstAttribute="baseline" secondItem="Dfk-xs-8h6" secondAttribute="baseline" id="Bz7-Ou-R7c"/>
+                                    <constraint firstItem="Top-q5-Wqh" firstAttribute="leading" secondItem="Dfk-xs-8h6" secondAttribute="leading" id="Kil-cr-IKp"/>
+                                    <constraint firstItem="Top-q5-Wqh" firstAttribute="leading" secondItem="ia0-qs-yZv" secondAttribute="leading" id="XN1-yL-dKH"/>
+                                    <constraint firstItem="ia0-qs-yZv" firstAttribute="top" secondItem="Top-q5-Wqh" secondAttribute="bottom" constant="53" id="YeG-V2-AIQ"/>
+                                    <constraint firstItem="Jbu-c4-wWS" firstAttribute="leading" secondItem="Dfk-xs-8h6" secondAttribute="trailing" constant="68" id="oRG-F8-Rbo"/>
+                                    <constraint firstItem="r1A-Sg-Ldr" firstAttribute="top" secondItem="Jbu-c4-wWS" secondAttribute="bottom" constant="46" id="oni-WY-eDf"/>
+                                    <constraint firstItem="Jbu-c4-wWS" firstAttribute="leading" secondItem="r1A-Sg-Ldr" secondAttribute="leading" id="r3m-ws-BPv"/>
+                                    <constraint firstItem="Top-q5-Wqh" firstAttribute="baseline" secondItem="r1A-Sg-Ldr" secondAttribute="baseline" id="zjd-Oc-OKd"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAm-Dr-fAZ">
+                                <rect key="frame" x="104" y="85" width="206" height="109"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="109" id="6xr-Vy-IUl"/>
+                                    <constraint firstAttribute="width" constant="206" id="PYk-Jc-9a1"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="27"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qiX-vA-0Zr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bXV-kE-LVw" firstAttribute="leading" secondItem="PAm-Dr-fAZ" secondAttribute="trailing" constant="-268" id="Odt-lP-O86"/>
+                            <constraint firstItem="bXV-kE-LVw" firstAttribute="top" secondItem="PAm-Dr-fAZ" secondAttribute="bottom" constant="53" id="QGS-f0-dk2"/>
+                            <constraint firstItem="PAm-Dr-fAZ" firstAttribute="centerX" secondItem="bXV-kE-LVw" secondAttribute="centerX" id="SEk-x8-I5h"/>
+                            <constraint firstItem="qiX-vA-0Zr" firstAttribute="bottom" secondItem="bXV-kE-LVw" secondAttribute="bottom" constant="216" id="etw-as-X25"/>
+                            <constraint firstItem="bXV-kE-LVw" firstAttribute="top" secondItem="ygC-YY-0gh" secondAttribute="top" constant="247" id="lVk-mx-jN4"/>
+                            <constraint firstItem="bXV-kE-LVw" firstAttribute="centerX" secondItem="qiX-vA-0Zr" secondAttribute="centerX" id="uN5-ae-HTR"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="LhO-k2-aPl"/>
                     <connections>
                         <outlet property="callButton" destination="Top-q5-Wqh" id="bm2-8T-JgJ"/>
+                        <outlet property="callEmreButton" destination="r1A-Sg-Ldr" id="Wj3-tQ-b6h"/>
                         <outlet property="emailButton" destination="ia0-qs-yZv" id="NOY-Nd-eja"/>
+                        <outlet property="emailEmreButton" destination="3DK-KJ-rYS" id="vWG-MT-iXy"/>
                         <outlet property="textButton" destination="Dfk-xs-8h6" id="3Am-IG-TI2"/>
+                        <outlet property="textEmreButton" destination="Jbu-c4-wWS" id="q8w-cg-BFp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2un-cd-mwP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1500,7 +1594,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pn7-aR-wbS"/>
+        <segue reference="AfV-AM-We8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
