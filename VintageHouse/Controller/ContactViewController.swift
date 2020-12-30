@@ -11,12 +11,14 @@ import MessageUI
 
 class ContactViewController: UIViewController, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate {
     
+
     
-//dsfdsfdsfdsgfhgfhfh
+
 
     @IBOutlet weak var emailEmreButton: UIButton!
     @IBOutlet weak var textEmreButton: UIButton!
     @IBOutlet weak var callEmreButton: UIButton!
+
     @IBOutlet weak var textButton: UIButton!
     @IBOutlet weak var callButton: UIButton!
     @IBOutlet weak var emailButton: UIButton!
