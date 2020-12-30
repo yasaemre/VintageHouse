@@ -12,9 +12,7 @@ import MessageUI
 class ContactViewController: UIViewController, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate {
     
     
-// Brand new branch needs editing add .
-    //This VC will be editted in couple of days
-    // I will work on this page
+//dsfdsfdsfds
 
     @IBOutlet weak var emailEmreButton: UIButton!
     @IBOutlet weak var textEmreButton: UIButton!
