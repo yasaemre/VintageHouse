@@ -34,6 +34,7 @@ class HouseRulesViewController: UIViewController {
 
 }
 
+
 extension HouseRulesViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return questionArray.count
