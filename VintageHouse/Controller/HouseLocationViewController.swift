@@ -36,7 +36,7 @@ class HouseLocationViewController: UIViewController, MKMapViewDelegate {
     @IBAction func viewMapButtonTapped(_ sender: Any) {
         if (UIApplication.shared.canOpenURL(NSURL(string:"http://maps.apple.com")! as URL)) {
             UIApplication.shared.openURL(NSURL(string:
-                "http://maps.apple.com/?ll=41.141640,29.046839")! as URL)
+                "http://maps.apple.com/?ll=37.718508810201115,-122.44325419736668")! as URL)
         } else {
           NSLog("Can't use Apple Maps");
         }
