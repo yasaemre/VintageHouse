@@ -25,7 +25,9 @@ class HouseLocationViewController: UIViewController, MKMapViewDelegate {
         viewMapButton.setTitleColor(.white, for: .normal)
         viewMapButton.layer.cornerRadius = 5
         viewMapButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10)
-        viewMapButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.blue)
+        
+        viewMapButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
+        view.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
         addTopAndBottomBorders()
 
     }

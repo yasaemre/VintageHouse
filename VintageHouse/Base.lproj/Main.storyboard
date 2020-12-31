@@ -231,16 +231,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="House Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1rB-Xj-fpP">
-                                <rect key="frame" x="135.66666666666669" y="20" width="142.66666666666669" height="24"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <rect key="frame" x="133.66666666666669" y="20" width="146.66666666666669" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxg-AD-hzW">
-                                <rect key="frame" x="57" y="274.66666666666669" width="327" height="175"/>
+                                <rect key="frame" x="55" y="274.66666666666669" width="331" height="175"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z25-3l-2D6">
-                                        <rect key="frame" x="-11" y="-6" width="304" height="199"/>
+                                        <rect key="frame" x="-11" y="-6" width="308" height="199"/>
                                         <subviews>
                                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="n2T-h6-4mJ">
                                                 <rect key="frame" x="16" y="20" width="155" height="121"/>
@@ -249,55 +249,55 @@
                                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kBx-zn-v1e">
                                                 <rect key="frame" x="30" y="148" width="118" height="30"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                                <state key="normal" title="View Map"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
+                                                <state key="normal" title="View Map">
+                                                    <color key="titleColor" systemColor="systemBackgroundColor"/>
+                                                </state>
                                                 <connections>
                                                     <action selector="viewMapButtonTapped:" destination="bqf-HU-aTV" eventType="touchUpInside" id="1Z4-OZ-OqT"/>
                                                 </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Vintage House " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fpe-ce-cgS">
-                                                <rect key="frame" x="188" y="20" width="96" height="16"/>
+                                                <rect key="frame" x="188" y="20" width="102" height="16"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U8G-Q8-E3R">
-                                                <rect key="frame" x="189" y="44" width="52" height="16"/>
+                                                <rect key="frame" x="189" y="44" width="54" height="16"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="734 Geneva Ave. San Francisco CA 94112" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W2S-iu-kKh">
                                                 <rect key="frame" x="189" y="61" width="101" height="66"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Phone" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUv-Ky-DAN">
-                                                <rect key="frame" x="189" y="125" width="40" height="16"/>
+                                                <rect key="frame" x="189" y="125" width="42" height="16"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="707 400 4683" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cf-gS-hwh">
-                                                <rect key="frame" x="188" y="156" width="87" height="16"/>
+                                                <rect key="frame" x="188" y="156" width="99" height="16"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="12"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="199" id="his-sp-gP3"/>
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstItem="Z25-3l-2D6" firstAttribute="leading" secondItem="vxg-AD-hzW" secondAttribute="leading" constant="-11" id="ChI-v7-qgR"/>
                                     <constraint firstItem="Z25-3l-2D6" firstAttribute="top" secondItem="vxg-AD-hzW" secondAttribute="top" constant="-6" id="Dh7-50-C1m"/>
@@ -305,16 +305,16 @@
                                     <constraint firstAttribute="trailing" secondItem="Z25-3l-2D6" secondAttribute="trailing" constant="34" id="tPV-dG-xOM"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sJ-NV-K4F">
-                                <rect key="frame" x="39" y="111" width="336" height="149"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5sJ-NV-K4F">
+                                <rect key="frame" x="39" y="114.33333333333333" width="336" height="152.66666666666669"/>
                                 <string key="text">Vintage House is accomondation company which aims to meet requirement for every single guest. It is founded 2020 by Eva Eng to accept many guest from all over world. The House's main mission is to provide comfortable environment with Vingtage looks.</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="13"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where We Are" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M7-nj-Tnu">
-                                <rect key="frame" x="39.000000000000007" y="87" width="89.666666666666686" height="16"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where We Are" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7M7-nj-Tnu">
+                                <rect key="frame" x="39" y="84.666666666666671" width="128.66666666666666" height="21.666666666666671"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -325,10 +325,10 @@
                             <constraint firstItem="5sJ-NV-K4F" firstAttribute="centerX" secondItem="Qx9-wR-PLv" secondAttribute="centerX" id="2Wq-CZ-gOb"/>
                             <constraint firstItem="5sJ-NV-K4F" firstAttribute="top" secondItem="7M7-nj-Tnu" secondAttribute="bottom" constant="8" id="4Iq-Jx-qhA"/>
                             <constraint firstItem="1rB-Xj-fpP" firstAttribute="top" secondItem="2bW-Lq-TuF" secondAttribute="top" constant="20" id="4mX-tX-l8o"/>
-                            <constraint firstItem="Z25-3l-2D6" firstAttribute="top" secondItem="5sJ-NV-K4F" secondAttribute="bottom" constant="8.6666666666666856" id="7Rn-Cp-WM3"/>
+                            <constraint firstItem="Z25-3l-2D6" firstAttribute="top" secondItem="5sJ-NV-K4F" secondAttribute="bottom" constant="1.6666669845581055" id="7Rn-Cp-WM3"/>
                             <constraint firstItem="7M7-nj-Tnu" firstAttribute="leading" secondItem="2bW-Lq-TuF" secondAttribute="leading" constant="39" id="9nu-Hq-ROd"/>
                             <constraint firstItem="2bW-Lq-TuF" firstAttribute="trailing" secondItem="5sJ-NV-K4F" secondAttribute="trailing" constant="39" id="CjK-w8-AuH"/>
-                            <constraint firstItem="2bW-Lq-TuF" firstAttribute="trailing" secondItem="Z25-3l-2D6" secondAttribute="trailing" constant="64" id="OZr-ee-ySj"/>
+                            <constraint firstItem="2bW-Lq-TuF" firstAttribute="trailing" secondItem="Z25-3l-2D6" secondAttribute="trailing" constant="62" id="OZr-ee-ySj"/>
                             <constraint firstItem="Z25-3l-2D6" firstAttribute="centerX" secondItem="2bW-Lq-TuF" secondAttribute="centerX" constant="-9" id="Sh7-bL-wGE"/>
                             <constraint firstItem="5sJ-NV-K4F" firstAttribute="leading" secondItem="2bW-Lq-TuF" secondAttribute="leading" constant="39" id="ajm-WY-UBU"/>
                             <constraint firstItem="1rB-Xj-fpP" firstAttribute="centerX" secondItem="Qx9-wR-PLv" secondAttribute="centerX" id="lUP-ao-qun"/>
