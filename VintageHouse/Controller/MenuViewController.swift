@@ -9,7 +9,7 @@
 import UIKit
 
 enum MenuType: Int {
-    case home, productCatalog, ourBrands, whatToKnow, ourCompany, ourLocations, contactUs
+    case home, rooms, whatToKnow, ourCompany, ourLocations, contactUs
 }
 
 class MenuViewController: UITableViewController {
@@ -20,18 +20,32 @@ class MenuViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
+        let leftSwipe = UISwipeGestureRecognizer(target: self, action: #selector(moveToNextItem(_:)))
+
+
+        leftSwipe.direction = .left
+
+        view.addGestureRecognizer(leftSwipe)
+
     }
-    
+    @objc func moveToNextItem(_ sender:UISwipeGestureRecognizer) {
+
+       switch sender.direction{
+        case .left:
+             //left swipe action
+            dismiss(animated: true) { [weak self] in
+
+            }
+       default: break //default
+        }
+
+    }
     //MARK: - Handlers
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let menuType = MenuType(rawValue: indexPath.row) else { return }
         switch menuType {
-        case .productCatalog:
-            guard let productsVC = storyboard?.instantiateViewController(withIdentifier: "productVC") as? ActivityViewController else { return }
-            productsVC.modalPresentationStyle = .pageSheet
-            present(productsVC, animated: true)
-        case .ourBrands:
+        case .rooms:
             guard let brandsVC = storyboard?.instantiateViewController(withIdentifier: "brandVC") as? RoomsViewController else { return }
             present(brandsVC, animated: true)
         case .whatToKnow:

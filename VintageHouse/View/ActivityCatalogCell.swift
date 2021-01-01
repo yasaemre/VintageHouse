@@ -12,7 +12,8 @@ class ActivityCatalogCell: UITableViewCell {
 
     @IBOutlet var productImage: UIImageView!
     @IBOutlet var productTitle: UILabel!
-    @IBOutlet var productViewButton: UIButton!
+    
+    @IBOutlet weak var productViewButton: UIButton!
     @IBOutlet var brandLabel: UILabel!
     @IBOutlet var productTypeLabel: UILabel!
     @IBOutlet var staticProductTypeLabel: UILabel!
