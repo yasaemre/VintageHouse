@@ -789,7 +789,8 @@
                     </view>
                     <navigationItem key="navigationItem" title="Product Catalog" id="O7s-mY-mzx">
                         <barButtonItem key="backBarButtonItem" title="Home" id="ye9-mW-e04"/>
-                        <barButtonItem key="rightBarButtonItem" title="Item" image="logo-navbar" id="44s-Zb-3uB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="search" id="44s-Zb-3uB">
+                            <color key="tintColor" red="0.1058823466" green="0.15686275059999999" blue="0.050980389119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             <connections>
                                 <action selector="searchButtonPressed:" destination="Q5w-qt-rQd" id="k9U-w1-nIj"/>
                             </connections>
@@ -1536,7 +1537,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" backIndicatorImage="arrowshape.turn.up.left" catalog="system" id="TVI-FZ-evU">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" red="0.11500490456819534" green="0.17790737748146057" blue="0.3135564923286438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.1058823466" green="0.15686275059999999" blue="0.050980389119999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <color key="tintColor" red="0.11500490456819534" green="0.17790737748146057" blue="0.3135564923286438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="barTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -1565,7 +1566,6 @@
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="location" catalog="system" width="128" height="121"/>
-        <image name="logo-navbar" width="50" height="50"/>
         <image name="logoS" width="422" height="324"/>
         <image name="p1" width="4001" height="2667"/>
         <image name="pencil" catalog="system" width="128" height="113"/>
