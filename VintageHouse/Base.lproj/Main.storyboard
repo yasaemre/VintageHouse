@@ -1495,12 +1495,12 @@
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAm-Dr-fAZ">
-                                <rect key="frame" x="104" y="85" width="206" height="109"/>
+                                <rect key="frame" x="-1" y="30" width="407" height="219"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="109" id="6xr-Vy-IUl"/>
-                                    <constraint firstAttribute="width" constant="206" id="PYk-Jc-9a1"/>
+                                    <constraint firstAttribute="height" constant="219" id="6xr-Vy-IUl"/>
+                                    <constraint firstAttribute="width" constant="407" id="PYk-Jc-9a1"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="27"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="35"/>
                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -1508,9 +1508,9 @@
                         <viewLayoutGuide key="safeArea" id="qiX-vA-0Zr"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bXV-kE-LVw" firstAttribute="leading" secondItem="PAm-Dr-fAZ" secondAttribute="trailing" constant="-268" id="Odt-lP-O86"/>
-                            <constraint firstItem="bXV-kE-LVw" firstAttribute="top" secondItem="PAm-Dr-fAZ" secondAttribute="bottom" constant="53" id="QGS-f0-dk2"/>
-                            <constraint firstItem="PAm-Dr-fAZ" firstAttribute="centerX" secondItem="bXV-kE-LVw" secondAttribute="centerX" id="SEk-x8-I5h"/>
+                            <constraint firstItem="bXV-kE-LVw" firstAttribute="leading" secondItem="PAm-Dr-fAZ" secondAttribute="trailing" constant="-364" id="Odt-lP-O86"/>
+                            <constraint firstItem="bXV-kE-LVw" firstAttribute="top" secondItem="PAm-Dr-fAZ" secondAttribute="bottom" constant="-2" id="QGS-f0-dk2"/>
+                            <constraint firstItem="PAm-Dr-fAZ" firstAttribute="centerX" secondItem="bXV-kE-LVw" secondAttribute="centerX" constant="-4.5" id="SEk-x8-I5h"/>
                             <constraint firstItem="qiX-vA-0Zr" firstAttribute="bottom" secondItem="bXV-kE-LVw" secondAttribute="bottom" constant="216" id="etw-as-X25"/>
                             <constraint firstItem="bXV-kE-LVw" firstAttribute="top" secondItem="ygC-YY-0gh" secondAttribute="top" constant="247" id="lVk-mx-jN4"/>
                             <constraint firstItem="bXV-kE-LVw" firstAttribute="centerX" secondItem="qiX-vA-0Zr" secondAttribute="centerX" id="uN5-ae-HTR"/>
