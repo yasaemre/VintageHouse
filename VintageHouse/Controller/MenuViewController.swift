@@ -36,7 +36,7 @@ class MenuViewController: UITableViewController {
             dismiss(animated: true) { [weak self] in
 
             }
-       default: break //default
+       default: break 
         }
 
     }

@@ -10,12 +10,12 @@ import UIKit
 
 class ActivityViewController: UIViewController, UISearchBarDelegate, SearchViewAnimateble {
 
-    @IBOutlet var productTypeButton: UIButton!
-    @IBOutlet var selectBrandButton: UIButton!
-    @IBOutlet var brandButtonCollection: [UIButton]!
-    @IBOutlet var proTypeButtonCollection: [UIButton]!
+    @IBOutlet var placesButton: UIButton!
+    @IBOutlet var activityTypeButton: UIButton!
+    @IBOutlet var activityButtonCollection: [UIButton]!
+    @IBOutlet var placesButtonCollection: [UIButton]!
     @IBOutlet var tableView: UITableView!
-    var products = [Activity]()
+    var activities = [Activity]()
     var filtered = [Activity]()
 
     var searchBar = UISearchBar()
@@ -33,44 +33,42 @@ class ActivityViewController: UIViewController, UISearchBarDelegate, SearchViewA
 
         
 
-        selectBrandButton.layer.masksToBounds = true
-        selectBrandButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
-        productTypeButton.layer.masksToBounds = true
-        productTypeButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
+        activityTypeButton.layer.masksToBounds = true
+        activityTypeButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
+        placesButton.layer.masksToBounds = true
+        placesButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
         searchBar.delegate = self
         searchBar.searchBarStyle = .minimal
         searchBar.showsCancelButton = true
 
         searchBarButtonItem = navigationItem.rightBarButtonItem
 
-        selectBrandButton.layer.cornerRadius = selectBrandButton.frame.height / 2
-        brandButtonCollection.forEach { (button) in
+        activityTypeButton.layer.cornerRadius = activityTypeButton.frame.height / 2
+        activityButtonCollection.forEach { (button) in
             
             button.layer.cornerRadius = button.frame.height / 2
             button.isHidden = true
             button.alpha = 0
-            //button.setGradientBackground(colorOne: Colors.darkGrey, colorTwo: Colors.green)
         }
         
         
-        productTypeButton.layer.cornerRadius = selectBrandButton.frame.height / 2
-        proTypeButtonCollection.forEach { (button) in
+        placesButton.layer.cornerRadius = activityTypeButton.frame.height / 2
+        placesButtonCollection.forEach { (button) in
             
             button.layer.cornerRadius = button.frame.height / 2
             button.isHidden = true
             button.alpha = 0
-            //button.setGradientBackground(colorOne: Colors.darkGrey, colorTwo: Colors.green)
         }
-        products = createProductArray()
+        activities = createProductArray()
         print("viewDidLoad filtered arr = \(filtered)")
-        print("viewDidLoad product arr = \(products)")
-        filtered = filtered.isEmpty ? products : filtered
+        print("viewDidLoad product arr = \(activities)")
+        filtered = filtered.isEmpty ? activities : filtered
         tableView.reloadData()
     }
     
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        filtered = searchText.isEmpty ? filtered : products.filter { return $0.activityTitle.contains(searchText)}
+        filtered = searchText.isEmpty ? filtered : activities.filter { return $0.activityTitle.contains(searchText)}
         tableView.reloadData()
     }
     
@@ -89,14 +87,14 @@ class ActivityViewController: UIViewController, UISearchBarDelegate, SearchViewA
          self.navigationItem.titleView = self.logoImageView
          self.logoImageView.alpha = 1
          }, completion: { finished in
-            self.filtered = self.products
+            self.filtered = self.activities
             self.tableView.reloadData()
        })
     }
     
     
     @IBAction func placePressed(_ sender: UIButton) {
-        proTypeButtonCollection.forEach { (button) in
+        placesButtonCollection.forEach { (button) in
             UIView.animate(withDuration: 0.7) {
                 button.isHidden = !button.isHidden
                 button.alpha = button.alpha == 0 ? 1 : 0
@@ -108,47 +106,47 @@ class ActivityViewController: UIViewController, UISearchBarDelegate, SearchViewA
 
         switch sender.titleLabel?.text {
             case "Restaurants":
-                filtered = products.filter({return $0.activityName == "Restaurants"})
-                proTypeButtonCollection.forEach { (button) in
+                filtered = activities.filter({return $0.activityName == "Restaurants"})
+                placesButtonCollection.forEach { (button) in
                     UIView.animate(withDuration: 0.7) {
                         button.isHidden = !button.isHidden
                         button.alpha = button.alpha == 0 ? 1 : 0
                     }
                 }
             case "Hikes":
-                filtered = products.filter({return $0.activityName == "Hikes"})
-                proTypeButtonCollection.forEach { (button) in
+                filtered = activities.filter({return $0.activityName == "Hikes"})
+                placesButtonCollection.forEach { (button) in
                     UIView.animate(withDuration: 0.7) {
                         button.isHidden = !button.isHidden
                         button.alpha = button.alpha == 0 ? 1 : 0
                     }
                 }
             case "Neighborhoods":
-                filtered = products.filter({return $0.activityName == "Neighborhoods"})
-                proTypeButtonCollection.forEach { (button) in
+                filtered = activities.filter({return $0.activityName == "Neighborhoods"})
+                placesButtonCollection.forEach { (button) in
                     UIView.animate(withDuration: 0.7) {
                         button.isHidden = !button.isHidden
                         button.alpha = button.alpha == 0 ? 1 : 0
                     }
                 }
             case "Grocery":
-            filtered = products.filter({return $0.activityName == "Grocery"})
-            proTypeButtonCollection.forEach { (button) in
+            filtered = activities.filter({return $0.activityName == "Grocery"})
+            placesButtonCollection.forEach { (button) in
                 UIView.animate(withDuration: 0.7) {
                     button.isHidden = !button.isHidden
                     button.alpha = button.alpha == 0 ? 1 : 0
                 }
             }
             case "Atractions":
-            filtered = products.filter({return $0.activityName == "Atractions"})
-            proTypeButtonCollection.forEach { (button) in
+            filtered = activities.filter({return $0.activityName == "Atractions"})
+            placesButtonCollection.forEach { (button) in
                 UIView.animate(withDuration: 0.7) {
                     button.isHidden = !button.isHidden
                     button.alpha = button.alpha == 0 ? 1 : 0
                 }
             }
             default:
-                self.filtered = self.products
+                self.filtered = self.activities
             }
         tableView.reloadData()
     }
@@ -156,7 +154,7 @@ class ActivityViewController: UIViewController, UISearchBarDelegate, SearchViewA
     
     @IBAction func activityTypePressed(_ sender: UIButton) {
         //self.selectBrandButton.setTitle("Activity Type", for: .normal)
-        brandButtonCollection.forEach { (button) in
+        activityButtonCollection.forEach { (button) in
             UIView.animate(withDuration: 0.7) {
                 button.isHidden = !button.isHidden
                 button.alpha = button.alpha == 0 ? 1 : 0
@@ -172,8 +170,8 @@ class ActivityViewController: UIViewController, UISearchBarDelegate, SearchViewA
        // self.selectBrandButton.setTitle(sender.titleLabel?.text, for: .normal)
         switch sender.titleLabel?.text {
         case "Food Scene":
-            filtered = products.filter({return $0.choice == "Food Scene"})
-            brandButtonCollection.forEach { (button) in
+            filtered = activities.filter({return $0.choice == "Food Scene"})
+            activityButtonCollection.forEach { (button) in
                 UIView.animate(withDuration: 0.7) {
                     button.isHidden = !button.isHidden
                     button.alpha = button.alpha == 0 ? 1 : 0
@@ -181,31 +179,31 @@ class ActivityViewController: UIViewController, UISearchBarDelegate, SearchViewA
                 }
             }
         case "Sightseeing":
-            filtered = products.filter({return $0.choice == "Sightseeing"})
-            brandButtonCollection.forEach { (button) in
+            filtered = activities.filter({return $0.choice == "Sightseeing"})
+            activityButtonCollection.forEach { (button) in
                 UIView.animate(withDuration: 0.7) {
                     button.isHidden = !button.isHidden
                     button.alpha = button.alpha == 0 ? 1 : 0
                 }
             }
         case "Hikes&Beaches":
-            filtered = products.filter({return $0.choice == "Hikes&Beaches"})
-            brandButtonCollection.forEach { (button) in
+            filtered = activities.filter({return $0.choice == "Hikes&Beaches"})
+            activityButtonCollection.forEach { (button) in
                 UIView.animate(withDuration: 0.7) {
                     button.isHidden = !button.isHidden
                     button.alpha = button.alpha == 0 ? 1 : 0
                 }
             }
         case "Shopping":
-            filtered = products.filter({return $0.choice == "Shopping"})
-            brandButtonCollection.forEach { (button) in
+            filtered = activities.filter({return $0.choice == "Shopping"})
+            activityButtonCollection.forEach { (button) in
                 UIView.animate(withDuration: 0.7) {
                     button.isHidden = !button.isHidden
                     button.alpha = button.alpha == 0 ? 1 : 0
                 }
             }
         default:
-            self.filtered = self.products
+            self.filtered = self.activities
         }
         tableView.reloadData()
     }
@@ -416,9 +414,9 @@ extension ActivityViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let filteredProduct = filtered[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: "ProductCatalogCell") as! ActivityCatalogCell
-        cell.productViewButton.tag = indexPath.row
-        cell.productViewButton.addTarget(self, action: #selector(viewProductButtonTapped), for: .touchUpInside)
-        cell.setProduct(product: filteredProduct)
+        cell.viewActivityButton.tag = indexPath.row
+        cell.viewActivityButton.addTarget(self, action: #selector(viewProductButtonTapped), for: .touchUpInside)
+        cell.setActivityCell(product: filteredProduct)
         cell.selectionStyle = .none
 
         return cell

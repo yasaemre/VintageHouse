@@ -35,7 +35,6 @@ class VintageHouseViewController: UIViewController, SwiftPhotoGalleryDataSource,
     override func viewDidLoad() {
         super.viewDidLoad()
         configureButtons()
-        //createGradientLayer()
     }
     
     func createGradientLayer() {

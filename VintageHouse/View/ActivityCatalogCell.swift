@@ -10,26 +10,26 @@ import UIKit
 
 class ActivityCatalogCell: UITableViewCell {
 
-    @IBOutlet var productImage: UIImageView!
-    @IBOutlet var productTitle: UILabel!
+    @IBOutlet var activityImage: UIImageView!
+    @IBOutlet var activityTitle: UILabel!
     
-    @IBOutlet weak var productViewButton: UIButton!
-    @IBOutlet var brandLabel: UILabel!
-    @IBOutlet var productTypeLabel: UILabel!
-    @IBOutlet var staticProductTypeLabel: UILabel!
-    @IBOutlet var staticBrandLabel: UILabel!
+    @IBOutlet weak var viewActivityButton: UIButton!
+    @IBOutlet var activityLabel: UILabel!
+    @IBOutlet var placeTypeLabel: UILabel!
+    @IBOutlet var staticPlaceLabel: UILabel!
+    @IBOutlet var staticActivityLabel: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     
-    func setProduct(product: Activity) {
-        self.productImage.image = product.activityImage
-        self.productTitle.text = product.activityTitle
-        self.brandLabel.text = product.choice
-        self.productTypeLabel.text = product.activityName
-        productTitle.textColor =
+    func setActivityCell(product: Activity) {
+        self.activityImage.image = product.activityImage
+        self.activityTitle.text = product.activityTitle
+        self.activityLabel.text = product.choice
+        self.placeTypeLabel.text = product.activityName
+        activityTitle.textColor =
           // 1
           UIColor { traitCollection in
             // 2
@@ -42,7 +42,7 @@ class ActivityCatalogCell: UITableViewCell {
                 return UIColor(red: 0, green: 0.4, blue: 0.2902, alpha: 1)
             }
           }
-        staticBrandLabel.textColor =
+        staticActivityLabel.textColor =
           // 1
           UIColor { traitCollection in
             // 2
@@ -55,7 +55,7 @@ class ActivityCatalogCell: UITableViewCell {
                 return UIColor(red: 0, green: 0.4, blue: 0.2902, alpha: 1)
             }
           }
-        staticProductTypeLabel.textColor =
+        staticPlaceLabel.textColor =
           // 1
           UIColor { traitCollection in
             // 2
@@ -71,12 +71,12 @@ class ActivityCatalogCell: UITableViewCell {
 
         
     
-        productTitle.numberOfLines = 0
-        productViewButton.layer.cornerRadius = 12
-        productViewButton.contentHorizontalAlignment = .center
-        productViewButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10)
-        productViewButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
-        productViewButton.layer.masksToBounds = true
+        activityTitle.numberOfLines = 0
+        viewActivityButton.layer.cornerRadius = 12
+        viewActivityButton.contentHorizontalAlignment = .center
+        viewActivityButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10)
+        viewActivityButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
+        viewActivityButton.layer.masksToBounds = true
 
     }
    

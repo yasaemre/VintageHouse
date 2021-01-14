@@ -126,7 +126,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="contactButton" destination="9xh-Uq-rnm" id="F5i-c8-QAu"/>
-                        <outlet property="productCatalogButton" destination="EQA-9U-Usd" id="Leb-tW-Nuy"/>
+                        <outlet property="whatToDoButton" destination="EQA-9U-Usd" id="Leb-tW-Nuy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -149,7 +149,8 @@
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="282" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-UJ-zFd" customClass="bra">
                                 <rect key="frame" x="0.0" y="125" width="414" height="567"/>
-                                <color key="backgroundColor" systemColor="tableCellGroupedBackgroundColor"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="brandCell" id="EbN-NC-gUe" customClass="ActivityCell" customModule="VintageHouse" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="282"/>
@@ -194,9 +195,9 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
-                                            <outlet property="brandImageView" destination="V7p-LS-su0" id="oWo-l0-nHt"/>
+                                            <outlet property="activityImageView" destination="V7p-LS-su0" id="oWo-l0-nHt"/>
                                             <outlet property="photosButton" destination="OFf-QD-0V1" id="8yv-9a-rQU"/>
-                                            <outlet property="sloganLabel" destination="jgh-46-bjI" id="71u-Ay-Bil"/>
+                                            <outlet property="roomLabel" destination="jgh-46-bjI" id="71u-Ay-Bil"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -574,13 +575,13 @@
                                             <constraint firstAttribute="trailing" secondItem="yG9-c2-Kka" secondAttribute="trailing" priority="250" constant="20" id="DEo-TS-DuB"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="brandLabel" destination="Rby-jM-wdj" id="faL-9G-Qsl"/>
-                                            <outlet property="productImage" destination="xYt-24-XrL" id="s8E-Ma-5gx"/>
-                                            <outlet property="productTitle" destination="Nax-5S-CtM" id="LMK-0z-U4f"/>
-                                            <outlet property="productTypeLabel" destination="5QI-J4-Syo" id="32q-V2-cWl"/>
-                                            <outlet property="productViewButton" destination="gMp-zN-iHk" id="95e-3J-f1Q"/>
-                                            <outlet property="staticBrandLabel" destination="vNr-wr-faG" id="8YO-ml-dyM"/>
-                                            <outlet property="staticProductTypeLabel" destination="S4q-S7-NoZ" id="6KU-Cf-Akc"/>
+                                            <outlet property="activityImage" destination="xYt-24-XrL" id="s8E-Ma-5gx"/>
+                                            <outlet property="activityLabel" destination="Rby-jM-wdj" id="faL-9G-Qsl"/>
+                                            <outlet property="activityTitle" destination="Nax-5S-CtM" id="LMK-0z-U4f"/>
+                                            <outlet property="placeTypeLabel" destination="5QI-J4-Syo" id="32q-V2-cWl"/>
+                                            <outlet property="staticActivityLabel" destination="vNr-wr-faG" id="8YO-ml-dyM"/>
+                                            <outlet property="staticPlaceLabel" destination="S4q-S7-NoZ" id="6KU-Cf-Akc"/>
+                                            <outlet property="viewActivityButton" destination="gMp-zN-iHk" id="95e-3J-f1Q"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -797,18 +798,18 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="productTypeButton" destination="WjQ-Pm-CZv" id="o2q-jO-coK"/>
-                        <outlet property="selectBrandButton" destination="ULP-2H-3hv" id="Q8B-4s-8Ta"/>
+                        <outlet property="activityTypeButton" destination="ULP-2H-3hv" id="Q8B-4s-8Ta"/>
+                        <outlet property="placesButton" destination="WjQ-Pm-CZv" id="o2q-jO-coK"/>
                         <outlet property="tableView" destination="qtP-g3-tCl" id="70W-yg-iUV"/>
-                        <outletCollection property="brandButtonCollection" destination="SQc-rJ-Fi1" collectionClass="NSMutableArray" id="vnx-HG-Jag"/>
-                        <outletCollection property="brandButtonCollection" destination="1BJ-JT-RxM" collectionClass="NSMutableArray" id="fcF-jL-YFf"/>
-                        <outletCollection property="brandButtonCollection" destination="na5-ua-Hyg" collectionClass="NSMutableArray" id="a0t-us-M7R"/>
-                        <outletCollection property="brandButtonCollection" destination="Y1j-hF-fIg" collectionClass="NSMutableArray" id="9nl-OF-LuZ"/>
-                        <outletCollection property="proTypeButtonCollection" destination="Ira-nA-x09" collectionClass="NSMutableArray" id="YVy-XH-InT"/>
-                        <outletCollection property="proTypeButtonCollection" destination="rIk-ud-6dK" collectionClass="NSMutableArray" id="wXe-jd-BOE"/>
-                        <outletCollection property="proTypeButtonCollection" destination="LWD-sq-ebk" collectionClass="NSMutableArray" id="gAo-Yt-QvN"/>
-                        <outletCollection property="proTypeButtonCollection" destination="ANR-uH-Crs" collectionClass="NSMutableArray" id="l2b-9Q-ubM"/>
-                        <outletCollection property="proTypeButtonCollection" destination="9iD-2Y-LtV" collectionClass="NSMutableArray" id="JRb-Tc-rHU"/>
+                        <outletCollection property="activityButtonCollection" destination="SQc-rJ-Fi1" collectionClass="NSMutableArray" id="vnx-HG-Jag"/>
+                        <outletCollection property="activityButtonCollection" destination="1BJ-JT-RxM" collectionClass="NSMutableArray" id="fcF-jL-YFf"/>
+                        <outletCollection property="activityButtonCollection" destination="na5-ua-Hyg" collectionClass="NSMutableArray" id="a0t-us-M7R"/>
+                        <outletCollection property="activityButtonCollection" destination="Y1j-hF-fIg" collectionClass="NSMutableArray" id="9nl-OF-LuZ"/>
+                        <outletCollection property="placesButtonCollection" destination="Ira-nA-x09" collectionClass="NSMutableArray" id="YVy-XH-InT"/>
+                        <outletCollection property="placesButtonCollection" destination="rIk-ud-6dK" collectionClass="NSMutableArray" id="wXe-jd-BOE"/>
+                        <outletCollection property="placesButtonCollection" destination="LWD-sq-ebk" collectionClass="NSMutableArray" id="gAo-Yt-QvN"/>
+                        <outletCollection property="placesButtonCollection" destination="ANR-uH-Crs" collectionClass="NSMutableArray" id="l2b-9Q-ubM"/>
+                        <outletCollection property="placesButtonCollection" destination="9iD-2Y-LtV" collectionClass="NSMutableArray" id="JRb-Tc-rHU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ax0-nb-F3D" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1582,9 +1583,6 @@
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="tableCellGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>

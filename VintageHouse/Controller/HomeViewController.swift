@@ -12,7 +12,7 @@ class HomeViewController: UIViewController {
     
     let transition = SlideInTransition()
     
-    @IBOutlet var productCatalogButton: UIButton!
+    @IBOutlet var whatToDoButton: UIButton!
     @IBOutlet var contactButton: UIButton!
 
     var gradientLayer: CAGradientLayer!
@@ -21,7 +21,7 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         
         contactButton.layer.cornerRadius = 10
-        productCatalogButton.layer.cornerRadius = 10
+        whatToDoButton.layer.cornerRadius = 10
         contactButton.contentEdgeInsets = UIEdgeInsets(top: 8, left: 10, bottom: 8, right: 10)
         let button = UIButton()
         button.setImage(UIImage(named: "logoH"), for: .normal)
@@ -46,9 +46,6 @@ class HomeViewController: UIViewController {
 
     @IBAction func didTapMenu(_ sender: UIBarButtonItem) {
         guard let menuVC = storyboard?.instantiateViewController(withIdentifier: "MenuViewController") as? MenuViewController else { return }
-//        menuVC.didTappedMenuType = { menuType in
-//            print(menuType)
-//        }
         menuVC.modalPresentationStyle = .overCurrentContext
         menuVC.transitioningDelegate = self
         present(menuVC, animated: true)

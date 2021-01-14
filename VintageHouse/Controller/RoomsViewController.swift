@@ -58,13 +58,13 @@ class RoomsViewController: UIViewController, SwiftPhotoGalleryDataSource, SwiftP
     func createBrandArray() -> [Room] {
         var roomArr = [Room]()
 
-        let brand0 = Room(image: UIImage(named: "brand0")!, title: "Black Room")
-        let brand1 = Room(image: UIImage(named: "brand1")!, title: "Blue Room")
-        let brand2 = Room(image: UIImage(named: "brand2")!, title: "Green Room")
+        let room0 = Room(image: UIImage(named: "brand0")!, title: "Black Room")
+        let room1 = Room(image: UIImage(named: "brand1")!, title: "Blue Room")
+        let room2 = Room(image: UIImage(named: "brand2")!, title: "Green Room")
         
-        roomArr.append(brand0)
-        roomArr.append(brand1)
-        roomArr.append(brand2)
+        roomArr.append(room0)
+        roomArr.append(room1)
+        roomArr.append(room2)
         return roomArr
     }
 }
@@ -81,7 +81,7 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
         let cell = tableView.dequeueReusableCell(withIdentifier: "brandCell") as! ActivityCell
         cell.photosButton.tag = indexPath.row
         cell.photosButton.addTarget(self, action: #selector(photosButtonTapped), for: .touchUpInside)
-        cell.setBrand(brand: room)
+        cell.setActivity(brand: room)
         return cell
         
         
