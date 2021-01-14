@@ -847,6 +847,9 @@
                                         <state key="normal" title="Contact Us">
                                             <color key="titleColor" red="0.1935745478" green="0.39129483700000001" blue="0.40541818740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="UaT-AO-fd1" kind="show" id="pg4-Mg-P3H"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.87117522950000004" green="0.96306985619999996" blue="0.85878700019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1340,6 +1343,9 @@
                                         <state key="normal" title="Contact Us">
                                             <color key="titleColor" red="0.1935745478" green="0.39129483700000001" blue="0.40541818740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="UaT-AO-fd1" kind="show" id="W5x-En-fL4"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Need More Information?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gBu-fB-M9h">
                                         <rect key="frame" x="5" y="28.666666666666629" width="239" height="22"/>
@@ -1556,7 +1562,8 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="Pn7-aR-wbS"/>
+        <segue reference="pg4-Mg-P3H"/>
+        <segue reference="AfV-AM-We8"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="arrowshape.turn.up.left" catalog="system" width="128" height="106"/>
