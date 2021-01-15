@@ -60,7 +60,7 @@ class RoomsViewController: UIViewController, SwiftPhotoGalleryDataSource, SwiftP
 
         let room0 = Room(image: UIImage(named: "brand0")!, title: "Black Room")
         let room1 = Room(image: UIImage(named: "brand1")!, title: "Blue Room")
-        let room2 = Room(image: UIImage(named: "brand2")!, title: "Green Room")
+        let room2 = Room(image: UIImage(named: "gr1")!, title: "Green Room")
         
         roomArr.append(room0)
         roomArr.append(room1)
