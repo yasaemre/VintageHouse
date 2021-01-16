@@ -283,7 +283,7 @@ Hours:
 Open ⋅ Closes 12AM
 Phone: (415) 831-2700
 """, locationTitle: "Corona Heights", latitude: 37.76236469000203,longtitude: -122.44390367339409)
-        let fort = Activity(productImage: UIImage(named: "fort")!, productTitle: "Fort Funson", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 11, information: """
+        let fort = Activity(productImage: UIImage(named: "fort")!, productTitle: "Fort Funston", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 11, information: """
 Fort Funston is a former harbor defense installation located in the southwestern corner of San Francisco. Formerly known as the Lake Merced Military Reservation, the fort is now a protected area within the Golden Gate National Recreation Area. \n
 Address: Fort Funston Rd, San Francisco, CA 94132
 Hours:
@@ -292,7 +292,7 @@ Phone: (415) 561-4700
 Function: Fortification
 Built: 1900
 """, locationTitle: "Fort Funson", latitude: 37.71955206633872,longtitude: -122.50282665996446)
-        let chinatown = Activity(productImage: UIImage(named: "chinatown")!, productTitle: "ChinaTown", brandName: "Food Scene", productTypeName: "Neighborhoods", tag: 12, information: """
+        let chinatown = Activity(productImage: UIImage(named: "chinatown")!, productTitle: "Chinatown", brandName: "Food Scene", productTypeName: "Neighborhoods", tag: 12, information: """
 This is one of the oldest and most established Chinatowns in the U.S. Beyond iconic Dragon’s Gate, a bustling maze of streets and alleys brims with dim sum joints and other traditional eateries. Also found are herbalists, bakeries, souvenir shops, and dark cocktail lounges and karaoke bars. There are ornate temples, including the landmark Tien How, as well as the Chinese Historical Society of America Museum. \n
 Restaurants: Z & Y Restaurant, Mister Jiu's
 """, locationTitle: "China Town", latitude: 37.79413733734106,longtitude: -122.40747488162124)
@@ -300,7 +300,7 @@ Restaurants: Z & Y Restaurant, Mister Jiu's
 The Financial District is the city’s business center. Among the skyscrapers that dominate the skyline is the striking, spire-topped Transamerica Pyramid building. There is a wealth of happy-hour hot spots and elegant date-night destinations, including the classic Tadich Grill, the city’s oldest restaurant. The Jackson Square Historic District features remnants of the Barbary Coast, a 19th-century red-light district. \n
 Restaurants: 750 Restaurant & Bar, Wayfare Tavern, Tadich Grill
 """, locationTitle: "Downtown", latitude:37.77849764465531, longtitude: -122.4166084139866)
-        let northBeach = Activity(productImage: UIImage(named: "north")!, productTitle: "North Beaach", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 14, information: """
+        let northBeach = Activity(productImage: UIImage(named: "north")!, productTitle: "North Beach", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 14, information: """
 North Beach, a buzzy neighborhood steeped in Italian heritage, draws locals and tourists to its checked-tablecloth trattorias, coffee shops and retro-flavored bars. The spirit of the Beat Generation can be felt at the storied City Lights bookstore and the memorabilia-filled Vesuvio Cafe bar. In Telegraph Hill the Filbert Steps offer a scenic hike to the iconic Coit Tower, with WPA-era murals and panoramic views.\n
 Elevation: 16.4′
 Restaurants: North Beach Pizza, North Beach Restaurant
