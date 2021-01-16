@@ -239,7 +239,7 @@ Hours:Open 24 hours
 Visitors: 24 million
 Designers: John McLaren, Calvert Vaux, William Hammond Hall
 """, locationTitle: "Golden Gate Park", latitude: 37.7695819175691, longtitude: -122.48617088695069)
-        let precidio = Activity(productImage: UIImage(named: "precidio")!, productTitle: "Precidio", brandName: "Sightseeing", productTypeName: "Atractions", tag: 4, information: "Presidio Park enables you to walk in the footsteps of California’s early European settlers. The popular attraction is the location where Gaspar de Portola and Junipero Serra constructed the San Diego Presidio and the Mission San Diego de Alcala in 1769. This fort and church, as well as the community that flourished around these sites, encompassed the first European settlement in the area now known as California. While the mission would later move further inland, the fort would serve as the capital of Baja California during the area’s rule by Mexico. Situated on a hill overlooking Old Town San Diego, the park features 40 acres of green open space, picnic areas, and memorials along with marvelous views of the surrounding landscape, including the San Diego River Valley and the Pacific Ocean. Although none of the original structures remain, the park was designated a National Historic Landmark in 1960.", locationTitle: "Precidio", latitude: 37.800747909371005, longtitude: -122.4678176718492)
+        let precidio = Activity(productImage: UIImage(named: "precidio")!, productTitle: "Presidio", brandName: "Sightseeing", productTypeName: "Atractions", tag: 4, information: "Presidio Park enables you to walk in the footsteps of California’s early European settlers. The popular attraction is the location where Gaspar de Portola and Junipero Serra constructed the San Diego Presidio and the Mission San Diego de Alcala in 1769. This fort and church, as well as the community that flourished around these sites, encompassed the first European settlement in the area now known as California. While the mission would later move further inland, the fort would serve as the capital of Baja California during the area’s rule by Mexico. Situated on a hill overlooking Old Town San Diego, the park features 40 acres of green open space, picnic areas, and memorials along with marvelous views of the surrounding landscape, including the San Diego River Valley and the Pacific Ocean. Although none of the original structures remain, the park was designated a National Historic Landmark in 1960.", locationTitle: "Presidio", latitude: 37.800747909371005, longtitude: -122.4678176718492)
         let napa = Activity(productImage: UIImage(named: "napa")!, productTitle: "Napa Valley", brandName: "Sightseeing", productTypeName: "Atractions", tag: 5, information: """
 Napa County is north of San Francisco, in California. It's known for hundreds of hillside vineyards in the Napa Valley wine region. In the city of Napa, Oxbow Public Market features regional gourmet food. The Napa Valley Wine Train is a vintage locomotive and traveling restaurant running through the valley. Northwest of Napa is Yountville, a town known for high-end restaurants and sparkling wine. \n
 Population: 137,744 (2019)
@@ -260,15 +260,15 @@ Open ⋅ Closes 10PM
 Phone: (415) 831-6331
 Hours or services may differ
 """, locationTitle: "Billy Goat Hill", latitude:37.7413631480055, longtitude: -122.43318544647005)
-        let tweenPeaks = Activity(productImage: UIImage(named: "twin")!, productTitle: "Tween Peaks", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 8, information: """
+        let tweenPeaks = Activity(productImage: UIImage(named: "twin")!, productTitle: "Twin Peaks", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 8, information: """
 Twin Peaks, named for a pair of 922-foot-high summits, is a remote residential neighborhood with modern homes densely packed on steep lots along winding streets. A grassy 64-acre hilltop park is a popular attraction, with its hiking trails leading up to wind-swept peaks and 360-degree views of the Bay Area. The triple-pronged Sutro Tower antenna that soars over the neighborhood is a fixture in the skyline. \n
 Address: 501 Twin Peaks Blvd, San Francisco, CA 94114
 Elevation: 922′
 Area: 34 acres
 Hours:
 Open ⋅ Closes 12AM
-""", locationTitle: "Twean Peaks", latitude: 37.754370496537376,longtitude:  -122.44875127986961)
-        let precidioL = Activity(productImage: UIImage(named: "precidio")!, productTitle: "Precidio: Lovers' Lane", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 9, information: """
+""", locationTitle: "Twin Peaks", latitude: 37.754370496537376,longtitude:  -122.44875127986961)
+        let precidioL = Activity(productImage: UIImage(named: "precidio")!, productTitle: "Lovers'Lane", brandName: "Hikes&Beaches", productTypeName: "Hikes", tag: 9, information: """
 Address: Lover's Ln, San Francisco, CA 94129
 Hours:
 Open 24 hours
