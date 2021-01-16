@@ -142,13 +142,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rooms" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="f18-Um-QwA">
-                                <rect key="frame" x="130.66666666666669" y="0.0" width="152.66666666666669" height="125"/>
+                                <rect key="frame" x="130.66666666666669" y="44" width="152.66666666666669" height="125"/>
                                 <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="37"/>
                                 <color key="textColor" red="0.14509806040000001" green="0.2901961207" blue="0.070588238540000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="282" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="V5G-UJ-zFd" customClass="bra">
-                                <rect key="frame" x="0.0" y="125" width="414" height="567"/>
+                                <rect key="frame" x="0.0" y="169" width="414" height="523"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
@@ -216,6 +216,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="GDh-74-Zyr"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="tableView" destination="V5G-UJ-zFd" id="MmR-VJ-keP"/>
                     </connections>
@@ -1260,13 +1261,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="2Ol-4O-elU">
-                                <rect key="frame" x="132.66666666666666" y="8" width="148.99999999999997" height="27"/>
+                                <rect key="frame" x="132.66666666666666" y="52" width="148.99999999999997" height="27"/>
                                 <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="21"/>
                                 <color key="textColor" red="0.1935745478" green="0.39129483700000001" blue="0.40541818740000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="bhG-Bi-yXz">
-                                <rect key="frame" x="0.0" y="43" width="414" height="570"/>
+                                <rect key="frame" x="0.0" y="87" width="414" height="526"/>
                                 <color key="backgroundColor" red="0.87117522950000004" green="0.96306985619999996" blue="0.85878700019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.87117522950000004" green="0.96306985619999996" blue="0.85878700019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="separatorColor" red="0.87058823529411766" green="0.96306985619999996" blue="0.85878700019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1379,6 +1380,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="6lI-mv-MRn"/>
+                    <splitViewDetailSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="contactUsButton" destination="IDf-Td-cvR" id="ons-jn-Vw0"/>
                         <outlet property="tableView" destination="bhG-Bi-yXz" id="F9m-mw-9ve"/>
@@ -1562,7 +1564,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="pg4-Mg-P3H"/>
+        <segue reference="W5x-En-fL4"/>
         <segue reference="AfV-AM-We8"/>
     </inferredMetricsTieBreakers>
     <resources>
