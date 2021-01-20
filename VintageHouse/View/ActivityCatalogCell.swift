@@ -21,7 +21,6 @@ class ActivityCatalogCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
     
     func setActivityCell(product: Activity) {
