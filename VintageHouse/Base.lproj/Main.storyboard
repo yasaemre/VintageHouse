@@ -1572,7 +1572,7 @@
         <image name="barrel2" width="356" height="260"/>
         <image name="bottles" width="333" height="282"/>
         <image name="hand.raised" catalog="system" width="128" height="128"/>
-        <image name="headerImage" width="900" height="715"/>
+        <image name="headerImage" width="897" height="661"/>
         <image name="house" catalog="system" width="128" height="106"/>
         <image name="line.horizontal.3" catalog="system" width="128" height="64"/>
         <image name="location" catalog="system" width="128" height="121"/>
