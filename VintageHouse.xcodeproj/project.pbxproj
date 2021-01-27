@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		22511A1B5DCA63D89A899855 /* Pods_VintageHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B004693D3DC06D5402DD0 /* Pods_VintageHouse.framework */; };
 		C6BF2EEA2584415D0073A190 /* LabelDarkModeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF2EE92584415D0073A190 /* LabelDarkModeColor.swift */; };
+		C6FC3F9325C0E64800D2C7FC /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC3F9225C0E64800D2C7FC /* BookViewController.swift */; };
 		F41EB476251B21D400AFCC44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EB475251B21D400AFCC44 /* HomeViewController.swift */; };
 		F41EB478251B21EC00AFCC44 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EB477251B21EC00AFCC44 /* MenuViewController.swift */; };
 		F425E6E72531274D0083EC12 /* ActivityCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F425E6E62531274D0083EC12 /* ActivityCell.swift */; };
@@ -57,6 +58,7 @@
 		3BF80A6AAE87A9FDA5C1C24A /* Pods-VintageHouse.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VintageHouse.release.xcconfig"; path = "Target Support Files/Pods-VintageHouse/Pods-VintageHouse.release.xcconfig"; sourceTree = "<group>"; };
 		BD9B004693D3DC06D5402DD0 /* Pods_VintageHouse.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VintageHouse.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C6BF2EE92584415D0073A190 /* LabelDarkModeColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LabelDarkModeColor.swift; sourceTree = "<group>"; };
+		C6FC3F9225C0E64800D2C7FC /* BookViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookViewController.swift; sourceTree = "<group>"; };
 		D808DB614D59BD84667D68FE /* Pods-VintageHouse.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VintageHouse.debug.xcconfig"; path = "Target Support Files/Pods-VintageHouse/Pods-VintageHouse.debug.xcconfig"; sourceTree = "<group>"; };
 		F41EB475251B21D400AFCC44 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		F41EB477251B21EC00AFCC44 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -179,6 +181,7 @@
 				F4E313FF251D7C090052D89D /* HouseLocationViewController.swift */,
 				F4E31401251D7C250052D89D /* ContactViewController.swift */,
 				F4E313F9251D7BCC0052D89D /* ActivityViewController.swift */,
+				C6FC3F9225C0E64800D2C7FC /* BookViewController.swift */,
 				F46172A8253F935E00098E6D /* ActivityDetailViewController.swift */,
 			);
 			path = Controller;
@@ -432,6 +435,7 @@
 				F4EDA18025194500009D53A5 /* AppDelegate.swift in Sources */,
 				F4E31400251D7C090052D89D /* HouseLocationViewController.swift in Sources */,
 				F4EDA18225194500009D53A5 /* SceneDelegate.swift in Sources */,
+				C6FC3F9325C0E64800D2C7FC /* BookViewController.swift in Sources */,
 				F41EB478251B21EC00AFCC44 /* MenuViewController.swift in Sources */,
 				F45EFDBB253A4FF900333019 /* Activity.swift in Sources */,
 				F4D08C19251BEF84007FE428 /* SlideInTransition.swift in Sources */,
