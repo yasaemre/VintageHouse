@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ActivityCell: UITableViewCell {
+class RoomCell: UITableViewCell {
 
 
     @IBOutlet var activityImageView: UIImageView!

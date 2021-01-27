@@ -10,17 +10,7 @@ import UIKit
 import MessageUI
 
 class ContactViewController: UIViewController, MFMessageComposeViewControllerDelegate, MFMailComposeViewControllerDelegate {
-    
-
-    
-
-
-    @IBOutlet weak var emailEmreButton: UIButton!
-    @IBOutlet weak var textEmreButton: UIButton!
-    @IBOutlet weak var callEmreButton: UIButton!
-
     @IBOutlet weak var textButton: UIButton!
-    @IBOutlet weak var callButton: UIButton!
     @IBOutlet weak var emailButton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,25 +18,12 @@ class ContactViewController: UIViewController, MFMessageComposeViewControllerDel
         textButton.layer.masksToBounds = true
         textButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
         
-        textEmreButton.layer.cornerRadius = 12
-        textEmreButton.layer.masksToBounds = true
-        textEmreButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
-        
-        callButton.layer.cornerRadius = 12
-        callButton.layer.masksToBounds = true
-        callButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
-        
-        callEmreButton.layer.cornerRadius = 12
-        callEmreButton.layer.masksToBounds = true
-        callEmreButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
+   
         
         emailButton.layer.cornerRadius = 12
         emailButton.layer.masksToBounds = true
         emailButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
-        
-        emailEmreButton.layer.cornerRadius = 12
-        emailEmreButton.layer.masksToBounds = true
-        emailEmreButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -78,59 +55,8 @@ class ContactViewController: UIViewController, MFMessageComposeViewControllerDel
                     print("Can't send messages.")
                 }
     }
-    @IBAction func textEmreButtonTapped(_ sender: Any) {
-        //Text Message
-                self.animateView(sender as! UIView)
-                
-                let composeVC = MFMessageComposeViewController()
-                composeVC.messageComposeDelegate = self
-                
-                //Configure the fields of the interface
-                composeVC.recipients = ["4159964734"]
-                composeVC.body = "Hi Emre, This is ..."
-                
-                if MFMessageComposeViewController.canSendText() {
-                    self.present(composeVC, animated: true, completion: nil)
-                } else {
-                    print("Can't send messages.")
-                }
-    }
     
-    @IBAction func callButtonTapped(_ sender: Any) {
-        if let phoneURL = NSURL(string: ("tel://" + "7074004683")) {
-            
-            let alert = UIAlertController(title: ("Call " + "7074004683" + "?"), message: nil, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
-                UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
-            }))
-            
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
-    }
-    @IBAction func callEmreButtonTapped(_ sender: Any) {
-        if let phoneURL = NSURL(string: ("tel://" + "4159964734")) {
-            
-            let alert = UIAlertController(title: ("Call " + "4159964734" + "?"), message: nil, preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Call", style: .default, handler: { (action) in
-                UIApplication.shared.open(phoneURL as URL, options: [:], completionHandler: nil)
-            }))
-            
-            alert.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
-            self.present(alert, animated: true, completion: nil)
-        }
 
-    }
-    @IBAction func emailEmreButtonTapped(_ sender: Any) {
-        if MFMailComposeViewController.canSendMail() {
-            let mail = MFMailComposeViewController()
-            mail.mailComposeDelegate = self
-            mail.setToRecipients(["emreyasa86@gmail.com"])
-            mail.setMessageBody("<p>Hi Emre, This ...</p>", isHTML: true)
-            
-            present(mail, animated: true)
-        }
-    }
     @IBAction func emailButtonTapped(_ sender: Any) {
         if MFMailComposeViewController.canSendMail() {
             let mail = MFMailComposeViewController()

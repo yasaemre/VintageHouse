@@ -70,6 +70,10 @@ class ActivityCatalogCell: UITableViewCell {
 
         
     
+        activityImage.layer.masksToBounds = true
+        self.activityImage.layer.cornerRadius = self.activityImage.frame.size.width / 4
+        activityImage.clipsToBounds = true
+        
         activityTitle.numberOfLines = 0
         viewActivityButton.layer.cornerRadius = 12
         viewActivityButton.contentHorizontalAlignment = .center

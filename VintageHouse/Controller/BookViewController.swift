@@ -11,6 +11,9 @@ import MessageUI
 
 class BookViewController: UIViewController, MFMailComposeViewControllerDelegate, UITextFieldDelegate {
 
+    @IBOutlet weak var greyRoomImage: UIImageView!
+    @IBOutlet weak var blueRoomImage: UIImageView!
+    @IBOutlet weak var greenRoomImage: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,8 +21,10 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate,
     @IBOutlet weak var endDatePicker: UIDatePicker!
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
+    
     var keyboardAdjusted = false
     var lastKeyboardOffset: CGFloat = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -29,6 +34,15 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate,
         self.emailTextField.delegate = self
         self.messageTextField.delegate = self
 
+        greyRoomImage.layer.masksToBounds = true
+        self.greyRoomImage.layer.cornerRadius = self.greyRoomImage.frame.size.width / 6
+        greyRoomImage.clipsToBounds = true
+        blueRoomImage.layer.masksToBounds = true
+        self.blueRoomImage.layer.cornerRadius = self.blueRoomImage.frame.size.width / 6
+        blueRoomImage.clipsToBounds = true
+        greenRoomImage.layer.masksToBounds = true
+        self.greenRoomImage.layer.cornerRadius = self.greenRoomImage.frame.size.width / 6
+        greenRoomImage.clipsToBounds = true
         submitButton.layer.masksToBounds = true
         submitButton.layer.cornerRadius = submitButton.frame.height / 2
         submitButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
@@ -96,6 +110,8 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate,
         }
     }
     
-
+    func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+        controller.dismiss(animated: true)
+    }
 
 }

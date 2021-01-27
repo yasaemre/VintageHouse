@@ -13,7 +13,7 @@ class RoomsViewController: UIViewController, SwiftPhotoGalleryDataSource, SwiftP
     
     let roomImages = [["g1.jpeg", "g2.jpeg", "g3.jpeg"],["b1.jpeg", "b2.jpeg", "b3.jpeg"], ["gr1.jpeg", "gr2.jpeg", "gr3.jpeg"]]
     var galleryTag = 0
-    let brandCell = ActivityCell()
+    let brandCell = RoomCell()
     
     func numberOfImagesInGallery(gallery: SwiftPhotoGallery) -> Int {
         return roomImages.count
@@ -78,7 +78,7 @@ extension RoomsViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let room = rooms[indexPath.row]
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "brandCell") as! ActivityCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "brandCell") as! RoomCell
         cell.photosButton.tag = indexPath.row
         cell.photosButton.addTarget(self, action: #selector(photosButtonTapped), for: .touchUpInside)
         cell.setActivity(brand: room)

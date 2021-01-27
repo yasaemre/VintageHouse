@@ -32,7 +32,7 @@ class ActivityDetailViewController: UIViewController, MFMessageComposeViewContro
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         let button = UIButton()
         button.setImage(UIImage(named: "logoH"), for: .normal)
         navigationItem.rightBarButtonItem = UIBarButtonItem(customView: button)
