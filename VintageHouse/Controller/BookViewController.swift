@@ -18,7 +18,8 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate,
     @IBOutlet weak var endDatePicker: UIDatePicker!
     @IBOutlet weak var messageTextField: UITextField!
     @IBOutlet weak var submitButton: UIButton!
-    
+    var keyboardAdjusted = false
+    var lastKeyboardOffset: CGFloat = 0.0
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -31,6 +32,40 @@ class BookViewController: UIViewController, MFMailComposeViewControllerDelegate,
         submitButton.layer.masksToBounds = true
         submitButton.layer.cornerRadius = submitButton.frame.height / 2
         submitButton.setGradientBackground(colorOne: Colors.veryDarkGrey, colorTwo: Colors.green)
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillShowNotification, object: nil)
+        NotificationCenter.default.removeObserver(self, name: UIResponder.keyboardWillHideNotification, object: nil)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        if keyboardAdjusted == false {
+            lastKeyboardOffset = getKeyboardHeight(notification: notification)
+            view.frame.origin.y -= lastKeyboardOffset
+            keyboardAdjusted = true
+        }
+    }
+
+    @objc func keyboardWillHide(notification: NSNotification) {
+        if keyboardAdjusted == true {
+            view.frame.origin.y += lastKeyboardOffset
+            keyboardAdjusted = false
+        }
+    }
+
+    func getKeyboardHeight(notification: NSNotification) -> CGFloat {
+        let userInfo = notification.userInfo
+        let keyboardSize = userInfo![UIResponder.keyboardFrameEndUserInfoKey] as! NSValue
+        return keyboardSize.cgRectValue.height
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
