@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		22511A1B5DCA63D89A899855 /* Pods_VintageHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B004693D3DC06D5402DD0 /* Pods_VintageHouse.framework */; };
+		C646EE3D25CCC32B006B384E /* Pods_VintageHouse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD9B004693D3DC06D5402DD0 /* Pods_VintageHouse.framework */; };
 		C6BF2EEA2584415D0073A190 /* LabelDarkModeColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6BF2EE92584415D0073A190 /* LabelDarkModeColor.swift */; };
 		C6FC3F9325C0E64800D2C7FC /* BookViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FC3F9225C0E64800D2C7FC /* BookViewController.swift */; };
 		F41EB476251B21D400AFCC44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F41EB475251B21D400AFCC44 /* HomeViewController.swift */; };
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				22511A1B5DCA63D89A899855 /* Pods_VintageHouse.framework in Frameworks */,
+				C646EE3D25CCC32B006B384E /* Pods_VintageHouse.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -628,7 +628,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
 				INFOPLIST_FILE = "$(SRCROOT)/VintageHouse/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -636,7 +636,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = emre.VintageHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -650,7 +650,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = 5DG8S4P5ZL;
 				INFOPLIST_FILE = "$(SRCROOT)/VintageHouse/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -658,7 +658,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = emre.VintageHouse;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

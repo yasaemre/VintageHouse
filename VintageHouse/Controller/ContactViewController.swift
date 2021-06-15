@@ -46,7 +46,7 @@ class ContactViewController: UIViewController, MFMessageComposeViewControllerDel
                 composeVC.messageComposeDelegate = self
                 
                 //Configure the fields of the interface
-                composeVC.recipients = ["7074004683"]
+                composeVC.recipients = ["4153368550"]
                 composeVC.body = "Hi Eva, This is ..."
                 
                 if MFMessageComposeViewController.canSendText() {
